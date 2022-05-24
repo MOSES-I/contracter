@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>This is a freelancer contract</title>
+<script language ="javascript">
+i=0;
+function showanswers()
+{
+if(i!=0)
+{
+alert("Your proposal was accepted by freelancer");
+}
+else
+{
+i=1;
+alert("Wait until freelancer accept your request");
+hand.focus();         
+}
+}
+function show()
+{
+alert("Your proposal was sent to freelancer");
+}
+
+j=0;
+function hello()
+{
+if(j!=0)
+{
+alert("As it was accepted by freelancer, Now you can't cancel it");
+}
+else
+{
+j=1;
+t= confirm("Do you want to cancel the contract");
+if(t==true)
+{
+document.write("Thanks for using");
+}      
+}
+}
+</script>
+</head>
+<body background="pr-bg.jpg" style="background-blend-mode: overlay;">
+<br>
+<h1 align = center  style="font-family:  Cooper Std; font-size: 40px; color: #ff6699; border-color:black; text-shadow: 4px 5px 7px white;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;"> SOLIDITY SAMPLE WEBSITE -BY MOSES AND VIGNESH</H1> <br> 
+
+<fieldset>
+<legend style="color: white; font-size:24px;">Contract Details</legend>
+<p style="color: white; font-size:24px;">
+Company Name: <input type=text placeholder="name" style="font-size:18px;"> <br><br>
+Contract proposal: <input type=text required style="font-size:18px;"><br><br>
+Enter your wallet address: <input type=text required style="font-size:18px;"><br><br>
+Enter the freelancer's wallet address: <input type=text required style="font-size:18px;"><br><br>
+ETH for design phase: <input type=text required style="font-size:18px;"><br><br>
+ETH for software handling phase: <input type=text required id="hand" style="font-size:18px;"><br><br>
+</p>
+<button onclick = "show()" style="background-color: lightblue;font-size:18px;">Send proposal </button><br><br>
+<button onclick="showanswers()" style="background-color: lightblue;font-size:18px;">show status </button><br><br>
+<form action = "contracterDesign.html" method="get">
+<button style="background-color: lightblue;font-size:18px;">Move to next </button><br><br>
+</form>
+<button onclick="hello()" style="background-color: red;font-size:18px;">Cancel the contract </button>
+</body>
+</html>
